@@ -45,11 +45,11 @@
         
        						 $result = mysqli_query($db_handle, $checkslq);
 
-       							 $sql2 = "SELECT max(Id) FROM acheteur";
+       							 $sql2 = "SELECT max(Id_acheteur) FROM acheteur";
 			
 									$results = mysqli_query($db_handle, $sql2);
 									$data = mysqli_fetch_assoc($results);
-									$idmax=$data['max(Id)'];
+									$idmax=$data['max(Id_acheteur)'];
 		
 									$idmaxi=$idmax+1;
 		
@@ -60,8 +60,8 @@
             
 								}
 								else{
-									$addsql = "INSERT INTO `acheteur` (`Id`,`Mail`, `Password`, `Nom`, `Prenom`, `Adresse`, `Ville`, `Code_postal`, `Telephone`) VALUES ('$idmaxi', '$mail', '$mdp', '$nom', '$prenom', '$adresse', '$ville', '$code_postal', '$telephone')";
-									$addsql2 = "INSERT INTO `carte_bank` (`Id`,`Type_carte`, `Num_carte`, `Date_carte`, `Nom_carte`, `Code_carte`) VALUES ('$idmaxi', '$typecarte', '$numcarte', '$date', '$nomcarte', '$crypto')";
+									$addsql = "INSERT INTO `acheteur` (`Id_acheteur`,`Mail`, `Password`, `Nom`, `Prenom`, `Adresse`, `Ville`, `Code_postal`, `Telephone`) VALUES ('$idmaxi', '$mail', '$mdp', '$nom', '$prenom', '$adresse', '$ville', '$code_postal', '$telephone')";
+									$addsql2 = "INSERT INTO `carte_bank` (`Id_acheteur`,`Type_carte`, `Num_carte`, `Date_carte`, `Nom_carte`, `Code_carte`) VALUES ('$idmaxi', '$typecarte', '$numcarte', '$date', '$nomcarte', '$crypto')";
 
 									$result2 = mysqli_query($db_handle, $addsql);
 									$resul2 = mysqli_query($db_handle, $addsql2);
