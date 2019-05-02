@@ -1,35 +1,50 @@
-h1{
-	width: 600px;
-	height: 40px;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
+body {
+ padding: 0px;
+ margin: 0px;
+ background: #f2f6e9;
 }
 
-nav ul{
-	padding: 0px;
-	margin: 0px;
-	list-style-type: none;
-	background-color: #333333; 
+.navbar {
+ background:#6ab446;
+}
+.nav-link, .navbar-brand {
+ color: #fff;
+ cursor: pointer;
+}
+.nav-link {
+ margin-right: 1em !important;
+}
+.nav-link:hover {
+ color: #000;
+}
+.navbar-collapse {
+ justify-content: flex-end;
 }
 
-nav li{
-	display: inline-block;
-	width: 100px;
-	height: 40px;
-	margin: 0px;
-	padding: 0px;
-	border-right: 1px solid #CCCCCC;
-	text-align: center;
-	line-height: 40px;
+.header {
+ background-image: url('background.jpg');
+ background-size: cover;
+ background-position: center;
+ position: relative;
 }
 
-nav li :hover{
-	background-color: #3388BB;
+.btn {
+	background:#6ab446;
 }
 
-nav li a{
-	display: block;
-	text-decoration: none;
-	color: #FFFFFF;
+table {
+  border-collapse: separate;
+}
+
+td {
+  border: 1px;
+  padding: 25px;
+}
+
+#scrollUp
+{
+position: fixed;
+bottom : 10px;
+right: -100px;
+opacity: 0.5;
 }
