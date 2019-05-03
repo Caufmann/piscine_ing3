@@ -25,7 +25,7 @@
     		</li>
         <li class="nav-item"><a class="nav-link" href="votre_compte.php">Votre compte</a></li>
     		<li class="nav-item"><a class="nav-link" href="panier.php">Panier</a></li>
-        <li class="nav-item"><a class="nav-link" href="connecter.php">Se connecter</a></li>
+        <li class="nav-item"><a class="nav-link" href="connecter.html">Se connecter</a></li>
         <li class="nav-item"><a class="nav-link" href="logout.php">Se deconnecter</a></li>
   		</ul>
 	</nav>
@@ -58,7 +58,7 @@ if ($db_found)
            echo"<html>
                 <table>
                 <tr>
-                 <td><a href=\"article.php?id_article=$id_article&categorie=$categorie\"><img src=\"img/$tof\" alt=\"user pic\" style=\"max-width:100px\"border=\"0\"></td></a>
+                 <td><a href=\"article.php?id_article=$id_article&categorie=$categorie\"><img src=\"img/$tof\" alt=\"user pic\" style=\"max-width:100px\"border=\"0\"></a></td>
                  <td>$name</td>
                  <td>$price €</td>
                </tr>

@@ -25,7 +25,7 @@
     		</li>
         <li class="nav-item"><a class="nav-link" href="votre_compte.php">Votre compte</a></li>
     		<li class="nav-item"><a class="nav-link" href="panier.php">Panier</a></li>
-        <li class="nav-item"><a class="nav-link" href="connecter.php">Se connecter</a></li>
+        <li class="nav-item"><a class="nav-link" href="connecter.html">Se connecter</a></li>
         <li class="nav-item"><a class="nav-link" href="logout.php">Se deconnecter</a></li>
   		</ul>
 	</nav>
@@ -52,11 +52,13 @@ if ($db_found)
           $tof=$data['Photo1'];
           $name=$data['Nom'];
           $price=$data['Prix'];
+          $id_article = $data['Id_article'];
+          $categorie = $data['Categorie'];
 
            echo"<html>
                 <table>
                 <tr>
-                 <td><img src=\"img/$tof\" alt=\"user pic\" style=\"max-width:100px\"></td>
+                 <td><a href=\"article.php?id_article=$id_article&categorie=$categorie\"><img src=\"img/$tof\" alt=\"user pic\" style=\"max-width:100px\"border=\"0\"></td></a></td>
                  <td>$name</td>
                  <td>$price €</td>
                </tr>

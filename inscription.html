@@ -1,15 +1,16 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Connexion au site</title>
-    <meta charset="utf-8">
+	<head>
+		<title>Inscription</title>
+		 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="magasin.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+	</head>
+	<body>
+		 <nav class="navbar navbar-expand-md navbar-light bg-light">
       <a class="navbar-brand" href="magasin.html">ECE Amazon</a>
       <ul class="navbar-nav">
         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
@@ -28,28 +29,27 @@
         <li class="nav-item"><a class="nav-link" href="logout.php">Se deconnecter</a></li>
       </ul>
   </nav>
+		<h2>Quel type de profil voulez-vous créer:</h2>
+		<form action="ECE_Amazon_recherche.php" method="post">
+			<table>
+				<tr>
+					<td>Acheteur: &nbsp<a href="inscription_acheteur.php"><img src="img/acheteur.jpg" alt="" style="max-width:200px"border="0"></a></td>
+				</tr>
+				<tr>
+					<td>Vendeur: &nbsp<a href="inscription_vendeur.php"><img src="img/vendeur.jpg" alt="" style="max-width:200px"border="0"></a></td>
+				</tr>
+			</table>
+		</form>
 
-    <form method="post" action="connecter.php">
-      <table border="0" width="400" align="center">
-        <tr>
-          <td width="200"><b>Votre Mail</b></td>
-          <td width="200">
-            <input type="text" name="Mail">
-          </td>
-        </tr>
-        <tr>
-          <td width="200"><b>Votre mot de passe<b></td>
-          <td width="200">
-            <input type="password" name="Password">
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" align="center">
-            <input type="submit" name="button1" value="Submit">
-          </td>
-        </tr>
-      </table>
-      <p><a href="inscription.html">Je n'ai pas de compte</a> </p>
-    </form>
-  </body>
-</html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<div id="scrollUp"><a href="#top"><img src="C:\wamp64\www\PP\to_top.png"/></a></div>
+<link href='magasin.css' rel='stylesheet' type='text/css'>
+<script src="magasin.js"></script>
+
+<footer class="py-5 bg-dark">
+  <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; ECE Amazon 2019</p>
+  </div>
+</footer>
+		</body>
+	</html>
