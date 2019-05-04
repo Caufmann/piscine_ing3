@@ -24,10 +24,16 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="votre_compte.php">Votre compte</a></li>
         <li class="nav-item"><a class="nav-link" href="panier.php">Panier</a></li>
-        <li class="nav-item"><a class="nav-link" href="connecter.html">Se connecter</a></li>
+        <li class="nav-item"><a class="nav-link" href="connecter1.php">Se connecter</a></li>
         <li class="nav-item"><a class="nav-link" href="logout.php">Se deconnecter</a></li>
       </ul>
   </nav>
+     <?php
+  if(isset($_GET['msg']))
+  {
+    echo $_GET['msg'];
+  }
+?>
 
     <form method="post" action="connecter.php">
       <table border="0" width="400" align="center">

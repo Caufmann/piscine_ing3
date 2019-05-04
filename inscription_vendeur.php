@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		 <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="magasin.html">ECE Amazon</a>
+      <a class="navbar-brand" href="magasin.php">ECE Amazon</a>
       <ul class="navbar-nav">
         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -25,7 +25,7 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="votre_compte.php">Votre compte</a></li>
         <li class="nav-item"><a class="nav-link" href="panier.php">Panier</a></li>
-        <li class="nav-item"><a class="nav-link" href="connecter.html">Se connecter</a></li>
+        <li class="nav-item"><a class="nav-link" href="connecter1.php">Se connecter</a></li>
         <li class="nav-item"><a class="nav-link" href="logout.php">Se deconnecter</a></li>
       </ul>
   </nav>
@@ -150,12 +150,15 @@
 	?>
 	 
 	
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<div id="scrollUp"><a href="#top"><img src="C:\wamp64\www\PP\to_top.png"/></a></div>
+<link href='magasin.css' rel='stylesheet' type='text/css'>
+<script src="magasin.js"></script>
 
 <footer class="py-5 bg-dark">
-  <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; ECE Amazon 2019</p>
-  </div>
+	<div class="container">
+    	<p class="m-0 text-center text-white">Copyright &copy; ECE Amazon 2019</p>
+	</div>
 </footer>
 
 		</body>

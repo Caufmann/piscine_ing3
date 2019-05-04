@@ -101,7 +101,7 @@ if ($loginOK)
 {
   $_SESSION['Id'] = $data['Id'];
   echo 'Bravo, Vous êtes connecté ';
-  echo "<p><a href='magasin.html'>Retour à la page d'accueil</a></p>";
+  echo "<p><a href='magasin.php'>Retour à la page d'accueil</a></p>";
   echo "<p><a href='votre_compte.php'>Retour à la page votre_compte</a></p>";
   echo "<p><a href='panier.php'>Retour à votre panier</a></p>";
 

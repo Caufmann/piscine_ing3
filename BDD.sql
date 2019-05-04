@@ -88,34 +88,37 @@ FOREIGN KEY (Id) REFERENCES Vendeur (Id)
 );
 
 Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(1,'Vetement','NikeAir','NikeAir.jpg','NikeAirNoire.jpg','NikeAirRouge.jpg','Super nike qui tiennent bien au pied',110,1,0,1);
+					values(1,'Vetement','NikeAir','NikeAir.jpg','NikeAirNoire.jpg','NikeAirRouge.jpg','Super nike qui tiennent bien au pied',110,1,4,2);
 
 
 Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(2,'Vetement','Adidas','Addidas.jpg',NULL,NULL,'Les meilleures amies des fous de rando',160,1,0,1);
+					values(2,'Vetement','Adidas','Addidas.jpg',NULL,NULL,'Les meilleures amies des fous de rando',160,1,0,2);
 Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(3,'Vetement','Pantacourt','Pantacourt.jpg',NULL,NULL,'Pour les grands et les petits',35,1,0,1);
+					values(3,'Vetement','Pantacourt','Pantacourt.jpg',NULL,NULL,'Pour les grands et les petits',35,1,0,2);
 Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(4,'Vetement','Robe','Robe.jpg',NULL,NULL,'Pour etre la reine de la soiree',65,1,0,1);
+					values(4,'Vetement','Robe','Robe.jpg',NULL,NULL,'Pour etre la reine de la soiree',65,1,0,2);
 
 Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(5,'Livre','Les Miserables','Miserables.jpg',NULL,NULL,'Oeuvre emblematique de la litterature francaise',17,1,0,1);
+					values(5,'Livre','Les Miserables','Miserables.jpg',NULL,NULL,'Oeuvre emblematique de la litterature francaise',17,1,11,3);
 Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(6,'Livre','Le crime de l orient express','Orient.jpg',NULL,NULL,'Best seller de l univers policier',7,1,0,1);
+					values(6,'Livre','Le crime de l orient express','Orient.jpg',NULL,NULL,'Best seller de l univers policier',7,1,0,4);
 
 Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(7,'Musique','Californication','Californication.jpg',NULL,NULL,'Profitez des Red Hot Chili Peppers',2,1,0,1);
-Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(8,'Musique','Under the bridge','Under_the_bridge.jpg',NULL,NULL,'Profitez des Red Hot Chili Peppers',2,1,0,1);
-Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(9,'Musique','Allumez le feu','Allumez_le_feu.jpg',NULL,NULL,'Pour faire revivre la flamme de Johnny',3,1,0,1);
+					values(13,'Livre','Araki','Araki.jpg','Araki2.jpg',NULL,'Tout a commence en 1978 dans un café ordinaire près de Kyoto. La rumeur se répand que les serveuses ne portent pas de culotte',17,1,2,2);
 
 Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(10,'Sport','Balle de golf','Balle_de_golf.jpg',NULL,NULL,'Remplissez tous les trous ',5,1,0,1);
+					values(7,'Musique','Californication','Californication.jpg',NULL,NULL,'Profitez des Red Hot Chili Peppers',2,1,0,4);
 Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(11,'Sport','Raquette de tennis','Raquette_de_tennis.jpg',NULL,NULL,'Pour un coup droit sans relache',40,1,0,1);
+					values(8,'Musique','Under the bridge','Under_the_bridge.jpg',NULL,NULL,'Profitez des Red Hot Chili Peppers',2,1,0,4);
 Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
-					values(12,'Sport','Bonnet de bain','Bonnet_de_bain.jpg',NULL,NULL,'Comme un poisson dans l eau',8,1,0,1);
+					values(9,'Musique','Allumez le feu','Allumez_le_feu.jpg',NULL,NULL,'Pour faire revivre la flamme de Johnny',3,1,0,3);
+
+Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
+					values(10,'Sport','Balle de golf','Balle_de_golf.jpg',NULL,NULL,'Remplissez tous les trous ',5,1,6,2);
+Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
+					values(11,'Sport','Raquette de tennis','Raquette_de_tennis.jpg',NULL,NULL,'Pour un coup droit sans relache',40,1,0,3);
+Insert into Article(Id_article,Categorie,Nom,Photo1,Photo2,Photo3,Description,Prix,Reduction_prix,Cpt_vente,Id) 
+					values(12,'Sport','Bonnet de bain','Bonnet_de_bain.jpg',NULL,NULL,'Comme un poisson dans l eau',8,1,0,4);
 
 
 
@@ -137,6 +140,7 @@ FOREIGN KEY (Identifiant) REFERENCES Article (Id_article)
 
 Insert into Livre(Identifiant,Categorie,Genre,Auteur,Editeur,Quantite) values(5,'Livre','Tragedie','Victor Hugo','Flammarion',21);
 Insert into Livre(Identifiant,Categorie,Genre,Auteur,Editeur,Quantite) values(6,'Livre','Policier','Agatha Christie','Livre de poche',12);
+Insert into Livre(Identifiant,Categorie,Genre,Auteur,Editeur,Quantite) values(13,'Livre','Histoire Vraie','Akihito','Clamart',19);
 
 CREATE TABLE Vetement(
 Identifiant int(11) NOT NULL,

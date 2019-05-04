@@ -6,64 +6,76 @@ $database = "ece_amazon";
 $db_handle = mysqli_connect('localhost', 'root', '');
 $db_found = mysqli_select_db($db_handle, $database);
 
-if($_SESSION['Id']<999)
-{
-  header("Location: connecter.html");
-}
-else
-{
-  echo "coucou c'est pour bientot";
-}
-          
-        /*if ($_POST['boutton'])
+      if($db_found)  
+      {
+        if ($_POST['boutton'])
         {
-            $sql2 = "SELECT Quantite,Code_article FROM sport WHERE Identifiant = '".$_GET["id_article"]."' ; ";
-              //echo" <br><br>";
-              $results = mysqli_query($db_handle, $sql2);
-              $data = mysqli_fetch_assoc($results);
-              $Quantite=$data['Quantite'];
-              $Code_article=$data['Code_article'];
 
-              if (mysqli_num_rows($results) == 0)
-					{
-					//le livre est déjà dans la BDD
-					echo "Nous n'avons pas trouvé cet article.";
-					} 
-           
-			else
-			{
-        if($Quantite<1)
-            {
-          //le livre est déjà dans la BDD
-          echo "Nous n'avons plus cet article en stock.";
-          } 
+          if($_SESSION['Id']<999 || !$_SESSION['Id'])
+          {
+            $msg = "Vous devez vous connecter avec un compte acheteur pour valider votre panier ";
+            header("Location:connecter1.php?msg=".$msg);
+            die;
+             
+          }
           else
           {
+   echo'<!DOCTYPE html>
+  <html>   
 
+    <form action="test_carte.php" method="post">
+          <table>
+            <tr>
+                          <td> Type de Carte:</td>
+                          <td><select name="type_card">
+                                <option value="Mastercard">Mastercard</option>
+                                <option value="Visa">Visa</option>
+                                <option value="Amex">Amex</option>
+                                <option value="Paypal">Paypal</option>
+                              </select>
+                          </td>
+                        </tr>
+          
+            <tr>
+                    <td>Numero de carte :</td>
+                    <td><input type="number" name="number"></td>
+            </tr>
+            <tr>
+                    <td>Date expiration carte :</td>
+                    <td><input type="date" name="date"></td>
+                    <td><span class="note">Format: AAAA-MM-JJ</span></td>
+            </tr>
+            <tr>
+                    <td>Nom proprietaire carte:</td>
+                    <td><input type="string" name="nom_carte" ></td>
+            </tr>
+            <tr>
+                    <td>Cryptogramme :</td>
+                    <td><input type="number" name="num_carte"></td>
+            </tr>
+            <tr>
+                          <td >
+                          <input type="submit" name="boutton" value="acheter">
+                          </td>
+                       </tr>
 
+          </table>
+      </form>
+  </html>';
 
-
-             $sql3 = "SELECT Nom,Prix,Reduction_prix FROM article
-              WHERE Id_article = '".$_GET["id_article"]."' ; ";
-              $result = mysqli_query($db_handle, $sql3);
-              $datas = mysqli_fetch_assoc($result);
-
-              $Nom_article=$datas['Nom'];
-              $Prix_article=$datas['Prix'];
-              $Reduction_prix=$datas['Reduction_prix'];
-
-          $sql = "INSERT INTO Panier(Id_panier,Code_article,Nom_article,Prix_article,Reduction_prix) VALUES(1,'$Code_article',
-          '$Nom_article','$Prix_article','$Reduction_prix')";
-          $res = mysqli_query($db_handle, $sql);
-
-           echo "L'article a été ajouté au panier avec succès";
-           echo "<p><a href='magasin.html'>Retour à l'accueil.</a></p>";
            }
 
 
         }
-    }
-*/
 
+        else if ($_POST['boutton1'])
+        {
+          $sql="DELETE FROM Panier ";
+          $result = mysqli_query($db_handle, $sql);
+          header("Location: panier.php");
+
+        }
+      
+    }
 
 ?>

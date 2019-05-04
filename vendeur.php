@@ -11,7 +11,7 @@
 <body>
 
   <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="magasin.html">ECE Amazon</a>
+      <a class="navbar-brand" href="magasin.php">ECE Amazon</a>
       <ul class="navbar-nav">
         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -25,7 +25,7 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="votre_compte.php">Votre compte</a></li>
         <li class="nav-item"><a class="nav-link" href="panier.php">Panier</a></li>
-        <li class="nav-item"><a class="nav-link" href="connecter.html">Se connecter</a></li>
+        <li class="nav-item"><a class="nav-link" href="connecter1.php">Se connecter</a></li>
         <li class="nav-item"><a class="nav-link" href="logout.php">Se deconnecter</a></li>
       </ul>
   </nav>

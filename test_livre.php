@@ -48,7 +48,7 @@ $db_found = mysqli_select_db($db_handle, $database);
           $res = mysqli_query($db_handle, $sql);
 
            echo "L'article a été ajouté au panier avec succès";
-           echo "<p><a href='magasin.html'>Retour à l'accueil.</a></p>";
+           echo "<p><a href='magasin.php'>Retour à l'accueil.</a></p>";
            }
 
 

@@ -4,7 +4,9 @@ session_start();
 // On écrase le tableau de session
 if (!$_SESSION['Id'])
 {
-	header("Location: connecter.html");
+	$msg = "Vous devez vous connecter pour visualiser votre compte";
+            header("Location:connecter1.php?msg=".$msg);
+            die;
 }
 
 
