@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="magasin.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+  		<a class="navbar-brand">ECE Amazon</a>
+  		<ul class="navbar-nav">
+    		<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+      		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        		<a class="dropdown-item" href="livres.php">Livres</a>
+        		<a class="dropdown-item" href="musique.php">Musique</a>
+        		<a class="dropdown-item" href="vetements.php">Vetements</a>
+        		<a class="dropdown-item" href="sportsetloisirs.php">Sports et loisirs</a>
+        		<div class="dropdown-divider"></div>
+        		<a class="dropdown-item" href="categories.php">Toutes les categories</a>
+      		</div>
+    		</li>
+    		<li class="nav-item"><a class="nav-link" href="connecter.html">Se connecter</a></li>
+    		<li class="nav-item"><a class="nav-link" href="votre_compte.php">Votre compte</a></li>
+    		<li class="nav-item"><a class="nav-link" href="panier.php">Panier</a></li>
+    		<li class="nav-item"><a class="nav-link" href="logout.php">Se deconnecter</a></li>
+  		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<h1 class="my-4">Categories</h1>
+				<div class="list-group">
+          			<a href="#Livres" class="list-group-item">Livres</a>
+          			<a href="#Musique" class="list-group-item">Musique</a>
+          			<a href="#Vetements" class="list-group-item">Vetements</a>
+          			<a href="#SportsEtLoisirs" class="list-group-item">Sports et loisirs</a>
+        		</div>
+			</div>
+
+			<div class="col-lg-9">
+				<h2>Les trois meilleurs ventes rien que pour vous</h2>
+				<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+          			<ol class="carousel-indicators">
+            			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+           				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          			</ol>
+          	<div class="carousel-inner" role="listbox">
+            	<div class="carousel-item active">
+              		<!--change la source de l'image-->
+              		<img class="d-block img-fluid" src="C:\Users\Alexandre\Documents\ECE\2018-2019\web dynamique\TD-TP\tp5\nature.jpg" alt="Premier produit" style="width:900px; height:350px;">
+            	</div>
+            	<div class="carousel-item">
+            		<!--change la source de l'image-->
+              		<img class="d-block img-fluid" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="Deuxieme produit" style="width:900px; height:350px;">
+            	</div>
+            	<div class="carousel-item">
+            		<!--change la source de l'image-->
+              		<img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Troisieme produit" style="width:900px; height:350px;">
+            	</div>
+          	</div>
+          	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            	<span class="sr-only">Precedent</span>
+          	</a>
+          	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+            	<span class="sr-only">Suivant</span>
+          	</a>
+        </div>
+        <div class="row">
+
+        	<div id="Livres">Livres</div>
+        	<div class="col-md-8 col-md-offset-2"></div>
+
+        	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+            		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+            		<div class="card-body">
+            			<h4 class="card-title">
+                  		<!--ref a mettre vers l'objet-->
+                  		<a href="objet.html">Premier objet</a>
+                		</h4>
+                		<h5>$40</h5>
+                		<p class="card-text">Reduction ?</p>
+            		</div>
+            	</div>
+        	</div>
+        	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                 		<a href="objet.html">2</a>
+                		</h4>
+                		<h5>$30</h5>
+                		<p class="card-text">reduc 2</p>
+              		</div>
+            	</div>
+          	</div>
+
+          	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                  		<a href="objet.html">3</a>
+                		</h4>
+                		<h5>$60</h5>
+                		<p class="card-text">reduc 3</p>
+              		</div>
+            	</div>
+          	</div>
+
+          	<div id="Musique">Musique</div>
+        	<div class="col-md-8 col-md-offset-2"></div>
+
+          	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                  		<a href="objet.html">4</a>
+                		</h4>
+                		<h5>$20</h5>
+                		<p class="card-text">reduc 4</p>
+              		</div>
+            	</div>
+          	</div>
+
+          	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                  		<a href="objet.html">5</a>
+                		</h4>
+                		<h5>$10</h5>
+                		<p class="card-text">reduc 5</p>
+              		</div>
+            	</div>
+          	</div>
+
+          	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                  		<a href="objet.html">6</a>
+                		</h4>
+                		<h5>$70</h5>
+                		<p class="card-text">reduc 6</p>
+              		</div>
+            	</div>
+          	</div>
+          	
+          	<div id="Vetements">Vetements</div>
+        	<div class="col-md-8 col-md-offset-2"></div>
+
+          	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                  		<a href="objet.html">7</a>
+                		</h4>
+                		<h5>$80</h5>
+                		<p class="card-text">reduc 7</p>
+              		</div>
+            	</div>
+          	</div>
+
+          	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                  		<a href="objet.html">8</a>
+                		</h4>
+                		<h5>$90</h5>
+                		<p class="card-text">reduc 8</p>
+              		</div>
+            	</div>
+          	</div>
+
+          	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                  		<a href="objet.html">9</a>
+                		</h4>
+                		<h5>$100</h5>
+                		<p class="card-text">reduc 9</p>
+              		</div>
+            	</div>
+          	</div>
+
+          	<div id="SportsEtLoisirs">Sports et loisirs</div>
+        	<div class="col-md-8 col-md-offset-2"></div>
+
+          	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                  		<a href="objet.html">10</a>
+                		</h4>
+                		<h5>$110</h5>
+                		<p class="card-text">reduc 10</p>
+              		</div>
+            	</div>
+          	</div>
+
+          	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                  		<a href="objet.html">11</a>
+                		</h4>
+                		<h5>$120</h5>
+                		<p class="card-text">reduc 11</p>
+              		</div>
+            	</div>
+          	</div>
+
+          	<div class="col-lg-4 col-md-6 mb-4">
+            	<div class="card h-100">
+              		<img class="card-img-top" src="https://www.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/fete-montagne2017.jpg?itok=c3eH39kp" alt="" style="width:253px; height:145px;">
+              		<div class="card-body">
+                		<h4 class="card-title">
+                  		<a href="objet.html">12</a>
+                		</h4>
+                		<h5>$130</h5>
+                		<p class="card-text">reduc 12</p>
+              		</div>
+            	</div>
+          	</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<div id="scrollUp"><a href="#top"><img src="C:\wamp64\www\PP\to_top.png"/></a></div>
+<link href='magasin.css' rel='stylesheet' type='text/css'>
+<script src="magasin.js"></script>
+
+<footer class="py-5 bg-dark">
+	<div class="container">
+    	<p class="m-0 text-center text-white">Copyright &copy; ECE Amazon 2019</p>
+	</div>
+</footer>
+
+</body>
+</html>
